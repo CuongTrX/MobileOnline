@@ -1,0 +1,35 @@
+﻿.site-footer {
+    background-color: #222;
+    color: #fff;
+}
+
+.bottom-footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    color: #b2b2b2;
+    border-top: 1px solid #b2b2b2;
+}
+
+.footer-nav {
+    text-align: right;
+    list-style: none;
+}
+
+    .footer-nav li {
+        display: inline;
+        padding: 0px 10px;
+    }
+
+        .footer-nav li:not(:first-child):before {
+            content: '|';
+            padding-right: 10px;
+        }
+
+    .footer-nav a {
+        color: #b2b2b2;
+    }
+
+        .footer-nav a:hover {
+            color: white;
+            text-decoration: none;
+        }

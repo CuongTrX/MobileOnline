@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="MobileStoreOnline.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin | My Mobile Store Online</title>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/summernote.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-fileinput/css/fileinput.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-2.1.4.js"></script>
+    <script src="../Scripts/fileinput.js"></script>
+    <script src="../Scripts/moment.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/summernote.js"></script>
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap-datetimepicker.js"></script>
+    <link href="../App_Themes/Default/Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%--Header Start--%>
+    <nav class="navbar navbar-inverse">
+        <div>
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="Default.aspx">Trang chủ</a></li>
+                    <li><a href="Product.aspx">Quản lý sản phẩm</a></li>
+                    <li><a href="NhaSX.aspx">Quản lý nhà sản xuất</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Đăng ký</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Đăng Nhập</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <%--Header End--%>
+    <%--Content Start--%>
+    
+        <div class="row" style="margin: 0px">
+            <div class="panel panel-primary">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    
+    <%--Content End--%>
+    <%--Footer Start--%>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <address>
+                        <br />
+                        Bản quyền thuộc về Mobile Shop Online ® - Copyright By Mobile Shop Online ©<br />
+                        Thiết kế bởi CuongTrX - Design by CuongTrX
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bottom-footer">
+                    <ul class="footer-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <%--Footer End--%>
+</body>
+</html>
